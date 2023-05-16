@@ -4,6 +4,15 @@ Main changes:
 1. Add dependencies as git submodules
 2. Add build script to building local packages from submodules
 
+Getting started:
+```
+git clone https://github.com/somaraju-greenlake/recogito-react-pdf
+cd recogito-react-pdf
+git submodule update --init
+./build.sh
+npm start
+```
+
 # Recogito-PDF
 
 Annotate a PDF document in React. Powered by [PDF.js](https://mozilla.github.io/pdf.js/),
