@@ -103,6 +103,13 @@ const AnnotatablePage = props => {
       mode: 'pre' 
     });
 
+    if (config.user) {
+      r.setAuthInfo({
+        id: 'http://www.example.com/ab',
+        displayName: 'ab'
+      });
+    }
+
     // Init Recogito Connections plugin
     props.connections.register(r);
 
@@ -120,6 +127,13 @@ const AnnotatablePage = props => {
       ...config,
       image: containerEl.current.querySelector('.imageLayer')
     });
+
+    if (config.user) {
+      anno.setAuthInfo({
+        id: 'http://www.example.com/ab',
+        displayName: 'ab'
+      });
+    }
 
     anno.on('createAnnotation', onCreateAnnotation);
     anno.on('updateAnnotation', onUpdateAnnotation);

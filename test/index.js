@@ -14,11 +14,26 @@ const App = () => {
       .then(setAnnotations);
   }, []);
 
+  const vocabFunction = () => {
+    // Replace with API call 
+    return ["A00.0", "A00.1"]
+  }
+
+  const widgets = [
+    {widget: 'TAG', textPlaceHolder: 'Code Suggestions:'},
+    {widget: 'TAG', textPlaceHolder: 'Add Code(s)', vocabulary: vocabFunction},
+    {widget: 'COMMENT', disableReply: true},
+  ]
+
+  const user = {id: 'http://www.example.com/ab', displayName: 'ab'}
+
   return (
     <PDFViewer 
       mode="scrolling"
       config={{
-        relationVocabulary: ['located_at', 'observed_at']
+        relationVocabulary: ['located_at', 'observed_at'],
+        widgets: widgets,
+        user: user
       }}
       url="compressed.tracemonkey-pldi-09.pdf" 
       annotations={annotations} 
