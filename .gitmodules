@@ -1,0 +1,9 @@
+[submodule "annotorious"]
+	path = annotorious
+	url = https://github.com/somaraju-greenlake/annotorious
+[submodule "recogito-client-core"]
+	path = recogito-client-core
+	url = https://github.com/somaraju-greenlake/recogito-client-core
+[submodule "recogito-js"]
+	path = recogito-js
+	url = https://github.com/somaraju-greenlake/recogito-js
