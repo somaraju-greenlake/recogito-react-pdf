@@ -1,3 +1,9 @@
+The forked repo follows https://annotorious.github.io/guides/hackers-guide/ to make it easier to modify recogito-client-core, annotorious or recogito-js. 
+
+Main changes:
+1. Add dependencies as git submodules
+2. Add build script to building local packages from submodules
+
 # Recogito-PDF
 
 Annotate a PDF document in React. Powered by [PDF.js](https://mozilla.github.io/pdf.js/),
