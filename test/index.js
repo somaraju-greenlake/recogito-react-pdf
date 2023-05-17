@@ -20,8 +20,7 @@ const App = () => {
   }
 
   const widgets = [
-    {widget: 'TAG', textPlaceHolder: 'Code Suggestions:'},
-    {widget: 'TAG', textPlaceHolder: 'Add Code(s)', vocabulary: vocabFunction},
+    {widget: 'TAG', textPlaceHolder: 'Add ICD10-AM/ACHI Code(s)', vocabulary: vocabFunction},
     {widget: 'COMMENT', disableReply: true},
   ]
 
@@ -41,7 +40,6 @@ const App = () => {
       onUpdateAnnotation={(a, b) => console.log(JSON.stringify(a, b))} 
       onDeleteAnnotation={a => console.log(JSON.stringify(a))} />
   )
-
 }
 
 window.onload = function() {
